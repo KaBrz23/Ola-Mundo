@@ -45,12 +45,47 @@
 
 //multabilidade e imultabilidade no contexto de var e val
 
-fun main() {
-    val imutavel: Int = 5 //imutavel
-    var mutavel: Int = 10 //mutavel
+// fun main() {
+//     val imutavel: Int = 5 //imutavel
+//     var mutavel: Int = 10 //mutavel
 
-    mutavel = 15
-    //imutavel = 20 //ERRO! Não pode atribuir um valor a uma variável declarada como imutável
-    println("Imutável: $imutavel")
-    println("Mutável: $mutavel")
+//     mutavel = 15
+//     //imutavel = 20 //ERRO! Não pode atribuir um valor a uma variável declarada como imutável
+//     println("Imutável: $imutavel")
+//     println("Mutável: $mutavel")
+// }
+
+//Convenções de Nomenclatura
+
+//Exemplo de nomenclatura de variáveis
+
+// fun main(){
+//     val nomeCompleto: String = "Kauê Braz"
+//     val idadeDoUsuario: Int = 18
+//     val valorTotal: Double = 50.0 //Evite de utilizar underscore em nomes de variáveis
+
+//     println("Nome Completo: $nomeCompleto")
+//     println("idade Usuário: $idadeDoUsuario")
+//     println("valorTotal: $valorTotal")
+// }
+
+// fun main () {
+//     val nomeCompleto = "Kauê"
+//     val primeiroCaractere = nomeCompleto[0]
+
+
+//     println("$primeiroCaractere")
+// }
+
+//Escopo de variáveis
+
+//Exemplo
+fun main () {
+    val nome = "Alice"
+
+    if (false) {
+        val sobrenome = "silve"
+        println("$nome $sobrenome")
+    } else 
+    println("Deu ruim") //ERRO!
 }
